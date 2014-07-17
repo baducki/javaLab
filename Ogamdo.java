@@ -1,14 +1,14 @@
 class Ogamdo {
 	public static void main (String[] args)
 	{
-		int i = 0;
+		int i = 13;
 
 		String ahae1 = "무서운아해";
 		String ahae2 = "무서워하는아해";
 
-		System.out.println("\n\t오감도-시제1호\n\t\t\t이상\n\n 13인의아해가도로로질주하오.\n (길은막다른골목길이적당하오.)\n");
+		System.out.println("\n\t오감도-시제1호\n\t\t\t이상\n\n " + i + "인의아해가도로로질주하오.\n (길은막다른골목길이적당하오.)\n");
 
-		for ( ; i < 13; ){
+		for (i = 1 ; i < 13; i++){
 			char josa = ' ';
 
 			if (i%10 == 1)
@@ -16,7 +16,7 @@ class Ogamdo {
 			else
 				josa = '도';
 
-			System.out.println(" 제" +  ++i + "의아해" + josa + "무섭다고그리오.");
+			System.out.println(" 제" + i + "의아해" + josa + "무섭다고그리오.");
 			
 			if (i%10 == 0)
 				System.out.println();
